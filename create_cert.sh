@@ -142,7 +142,6 @@ CreateKey() {
 
 
 CreateCsr() {
-    # openssl req -config $CustomConf -key private/${DefaultDomain}.key -new -sha256 -out csr/${DefaultDomain}.csr -batch
     Counter=1
     openssl req -key private/${DefaultDomain}.key \
                 -new -sha256 \
